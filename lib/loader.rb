@@ -1,5 +1,7 @@
 require File.join(File.dirname(__FILE__), 'maze/door.rb')
 require File.join(File.dirname(__FILE__), 'maze/room.rb')
+require File.join(File.dirname(__FILE__), 'maze/enchanted_room.rb')
+require File.join(File.dirname(__FILE__), 'maze/door_need_spell.rb')
 require File.join(File.dirname(__FILE__), 'maze/wall.rb')
 require File.join(File.dirname(__FILE__), 'maze/maze.rb')
 require File.join(File.dirname(__FILE__), 'maze/direction.rb')

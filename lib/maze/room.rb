@@ -7,6 +7,12 @@ module Maze
     def initialize(params = {})
       @nomer = params[:nomer]
       @sides = {}
+
+      post_initialize
+    end
+
+    def post_initialize(params={})
+      nil
     end
 
     def get_side(direction)
