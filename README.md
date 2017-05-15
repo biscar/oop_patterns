@@ -12,5 +12,8 @@ _Patterns_
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_factory.rb'
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_game.rb'
-maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(Patterns::Creational::AbstractFactory::MazeFactory.new)
+
+factory = Patterns::Creational::AbstractFactory::MazeFactory
+
+maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
