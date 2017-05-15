@@ -1,5 +1,7 @@
+require File.join(File.dirname(__FILE__), 'map_site.rb')
+
 module Maze
-  class Door
+  class Door < Maze::MapSite
 
     attr_reader :room1, :room2, :is_open
 
@@ -9,7 +11,7 @@ module Maze
     end
 
     def other_side_from(room)
-
+      @room1 == room ? @room2 : @room1
     end
 
   end
