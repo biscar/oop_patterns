@@ -33,9 +33,4 @@ class MazeGame
 
   end
 
-
-
-
-
-
 end
