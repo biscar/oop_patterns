@@ -28,3 +28,9 @@ require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/b
 factory = Patterns::Creational::AbstractFactory::BombedMazeFactory
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
+
+Builder
+
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/builder/maze_game.rb'
+
+
