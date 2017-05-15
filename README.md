@@ -24,6 +24,7 @@ factory = Patterns::Creational::AbstractFactory::EnchantedMazeFactory
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
 
-factory = Patterns::Creational::AbstractFactory::EnchantedMazeFactory
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/bombed_maze_factory.rb'
+factory = Patterns::Creational::AbstractFactory::BombedMazeFactory
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
