@@ -2,10 +2,10 @@ require File.join(File.dirname(__FILE__), 'map_site.rb')
 
 module Maze
   class Room < Maze::MapSite
-    attr_reader :room_no
+    attr_reader :nomer
 
     def initialize(params = {})
-      @room_no = params[:room_no]
+      @nomer = params[:nomer]
       @sides = {}
     end
 

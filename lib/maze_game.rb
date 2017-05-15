@@ -11,8 +11,8 @@ class MazeGame
     def create_maze
       maze = Maze::Maze.new
 
-      r1 = Maze::Room.new(room_no: 1)
-      r2 = Maze::Room.new(room_no: 2)
+      r1 = Maze::Room.new(nomer: 1)
+      r2 = Maze::Room.new(nomer: 2)
       door = Maze::Door.new(room1: r1, room2: r2)
 
       maze.add_room(r1)
