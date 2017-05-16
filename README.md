@@ -29,7 +29,7 @@ factory = Patterns::Creational::AbstractFactory::BombedMazeFactory
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
 
-Builder
+_Builder_
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/builder/maze_game.rb'
 
@@ -38,4 +38,20 @@ game = Patterns::Creational::Builder::MazeGame
 builder = Patterns::Creational::Builder::StandardMazeBuilder.new
 maze = game.create_maze(builder)
 
+_Factory Method_
 
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/maze_game.rb'
+
+game = Patterns::Creational::FactoryMethod::MazeGame
+maze = game.create_maze
+maze.room(1)
+
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/bombed_maze_game.rb'
+game = Patterns::Creational::FactoryMethod::BombedMazeGame
+maze = game.create_maze
+maze.room(1)
+
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/enchanted_maze_game.rb'
+game = Patterns::Creational::FactoryMethod::EnchantedMazeGame
+maze = game.create_maze
+maze.room(2)
