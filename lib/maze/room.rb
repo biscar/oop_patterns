@@ -8,11 +8,12 @@ module Maze
       @nomer = params[:nomer]
       @sides = {}
 
-      post_initialize
+      post_initialize(params)
     end
 
-    def post_initialize(params={})
-      nil
+    def post_initialize(params = {})
+      @nomer = params[:nomer]
+      @sides = {}
     end
 
     def get_side(direction)

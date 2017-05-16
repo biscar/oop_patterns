@@ -8,6 +8,13 @@ module Maze
     def initialize(params = {})
       @room1 = params[:room1]
       @room2 = params[:room2]
+
+      post_initialize(params)
+    end
+
+    def post_initialize(params = {})
+      @room1 = params[:room1]
+      @room2 = params[:room2]
     end
 
     def other_side_from(room)

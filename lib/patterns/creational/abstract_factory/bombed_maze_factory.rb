@@ -6,16 +6,12 @@ module Patterns
     module AbstractFactory
       class BombedMazeFactory < Patterns::Creational::AbstractFactory::MazeFactory
 
-        class << self
+        def make_room(nomer)
+          Maze::RoomWithABomb.new(nomer: nomer)
+        end
 
-          def make_room(nomer)
-            Maze::RoomWithABomb.new(nomer: nomer)
-          end
-
-          def make_wal
-            Maze::BombedWall.new
-          end
-
+        def make_wal
+          Maze::BombedWall.new
         end
 
       end

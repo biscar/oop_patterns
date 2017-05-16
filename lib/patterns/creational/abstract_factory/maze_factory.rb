@@ -5,24 +5,29 @@ module Patterns
     module AbstractFactory
       class MazeFactory
 
-        class << self
+        def initialize(params = {})
 
-          def make_maze
-            Maze::Maze.new
-          end
+          post_initialize(params)
+        end
 
-          def make_wall
-            Maze::Wall.new
-          end
+        def post_initialize(params = {})
+          nil
+        end
 
-          def make_room(nomer)
-            Maze::Room.new(nomer: nomer)
-          end
+        def make_maze
+          Maze::Maze.new
+        end
 
-          def make_door(r1, r2)
-            Maze::Door.new(room1: r1, room2: r2)
-          end
+        def make_wall
+          Maze::Wall.new
+        end
 
+        def make_room(nomer)
+          Maze::Room.new(nomer: nomer)
+        end
+
+        def make_door(r1, r2)
+          Maze::Door.new(room1: r1, room2: r2)
         end
 
       end

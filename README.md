@@ -15,17 +15,17 @@ _AbstractFactory_
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_game.rb'
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_factory.rb'
-factory = Patterns::Creational::AbstractFactory::MazeFactory
+factory = Patterns::Creational::AbstractFactory::MazeFactory.new
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/enchanted_maze_factory.rb'
-factory = Patterns::Creational::AbstractFactory::EnchantedMazeFactory
+factory = Patterns::Creational::AbstractFactory::EnchantedMazeFactory.new
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/bombed_maze_factory.rb'
-factory = Patterns::Creational::AbstractFactory::BombedMazeFactory
+factory = Patterns::Creational::AbstractFactory::BombedMazeFactory.new
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(factory)
 maze.room(1)
 
@@ -55,3 +55,13 @@ require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/enc
 game = Patterns::Creational::FactoryMethod::EnchantedMazeGame
 maze = game.create_maze
 maze.room(2)
+
+_Prototype_
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_game.rb'
+
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/prototype/maze_prototype_factory.rb'
+
+factory = Patterns::Creational::Prototype::MazePrototypeFactory
+simple_prototype_factory = factory.new(maze: Maze::Maze.new, wall: Maze::Wall.new , door: Maze::Door.new , room: Maze::Room.new)
+maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(simple_prototype_factory)
+maze.room(1)
