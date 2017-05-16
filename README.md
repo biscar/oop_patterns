@@ -70,3 +70,14 @@ maze.room(1)
 bombed_prototype_factory = factory.new(maze: Maze::Maze.new, wall: Maze::BombedWall.new , door: Maze::Door.new , room: Maze::RoomWithABomb.new)
 maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(bombed_prototype_factory)
 maze.room(2)
+
+_Singleton_
+
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/abstract_factory/maze_game.rb'
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/singleton/maze_factory.rb'
+
+ENV['MAZESTYLE'] = 'bombed'
+singleton = Patterns::Creational::Singleton::MazeFactory.instance
+
+maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(singleton.factory)
+maze.room(1)
