@@ -33,4 +33,9 @@ Builder
 
 require '/home/vital/dev/oop_patterns/lib/patterns/creational/builder/maze_game.rb'
 
+require '/home/vital/dev/oop_patterns/lib/patterns/creational/builder/standard_maze_builder.rb'
+game = Patterns::Creational::Builder::MazeGame
+builder = Patterns::Creational::Builder::StandardMazeBuilder.new
+maze = game.create_maze(builder)
+
 

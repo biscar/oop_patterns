@@ -1,7 +1,7 @@
 require File.join(File.dirname(__FILE__), 'wall.rb')
 
 module Maze
-  class BombedWall
+  class BombedWall < Maze::Wall
 
 
   end
