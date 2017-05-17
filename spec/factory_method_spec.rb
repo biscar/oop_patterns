@@ -11,25 +11,20 @@ describe 'FactoryMethod' do
     maze = game.create_maze
 
     check_rooms(maze)
+  end
 
-    require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/bombed_maze_game.rb'
+  example 'BombedMazeGame' do
     game = Patterns::Creational::FactoryMethod::BombedMazeGame
     maze = game.create_maze
-    maze.room(1)
-
-    require '/home/vital/dev/oop_patterns/lib/patterns/creational/factory_method/enchanted_maze_game.rb'
-    game = Patterns::Creational::FactoryMethod::EnchantedMazeGame
-    maze = game.create_maze
-    maze.room(2)
-
-    builder = Patterns::Creational::Builder::StandardMazeBuilder.new
-    maze = game.create_maze(builder)
 
     check_rooms(maze)
   end
 
-  example '' do
+  example 'EnchantedMazeGame' do
+    game = Patterns::Creational::FactoryMethod::EnchantedMazeGame
+    maze = game.create_maze
 
+    check_rooms(maze)
   end
 
   private
