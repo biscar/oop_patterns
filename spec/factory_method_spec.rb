@@ -1,8 +1,11 @@
+require 'spec_helper.rb'
+
 require './lib/patterns/creational/factory_method/bombed_maze_game.rb'
 require './lib/patterns/creational/factory_method/enchanted_maze_game.rb'
 require './lib/patterns/creational/factory_method/maze_game.rb'
 
 describe 'FactoryMethod' do
+  include_context 'helper'
 
   let(:game) { Patterns::Creational::FactoryMethod::MazeGame }
 
@@ -27,10 +30,4 @@ describe 'FactoryMethod' do
     check_rooms(maze)
   end
 
-  private
-
-  def check_rooms(maze)
-    expect(maze.room(1)).not_to be_nil
-    expect(maze.room(2)).not_to be_nil
-  end
 end

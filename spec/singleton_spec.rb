@@ -1,7 +1,10 @@
+require 'spec_helper.rb'
+
 require './lib/patterns/creational/abstract_factory/maze_game.rb'
 require './lib/patterns/creational/singleton/maze_factory.rb'
 
 describe 'Singleton' do
+  include_context 'helper'
 
   example 'Bombed' do
     ENV['MAZESTYLE'] = 'bombed'
@@ -29,13 +32,5 @@ describe 'Singleton' do
 
     check_rooms(maze)
   end
-
-  private
-
-  def check_rooms(maze)
-    expect(maze.room(1)).not_to be_nil
-    expect(maze.room(2)).not_to be_nil
-  end
-
 
 end

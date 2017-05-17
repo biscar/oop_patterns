@@ -1,6 +1,9 @@
+require 'spec_helper.rb'
+
 require './lib/patterns/creational/prototype/maze_prototype_factory.rb'
 
 describe 'Prototype' do
+  include_context 'helper'
 
   let(:factory) {  Patterns::Creational::Prototype::MazePrototypeFactory }
 
@@ -16,13 +19,6 @@ describe 'Prototype' do
     maze = Patterns::Creational::AbstractFactory::MazeGame.create_maze(bombed_prototype_factory)
 
     check_rooms(maze)
-  end
-
-  private
-
-  def check_rooms(maze)
-    expect(maze.room(1)).not_to be_nil
-    expect(maze.room(2)).not_to be_nil
   end
 
 end
