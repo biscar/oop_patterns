@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '../../../loader.rb')
+require File.join(File.dirname(__FILE__), '../../../maze_loader.rb')
 require File.join(File.dirname(__FILE__), '../abstract_factory/maze_factory.rb')
 
 module Patterns
