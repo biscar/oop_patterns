@@ -12,3 +12,5 @@
 * _Prototype_
 
 * _Singleton_
+
+http://practicingruby.com/articles/structural-design-patterns
