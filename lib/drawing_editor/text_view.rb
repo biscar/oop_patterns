@@ -1,17 +1,9 @@
+require File.join(File.dirname(__FILE__), 'text_view_module')
+
 module DrawingEditor
   class TextView
+    include TextViewModule
 
-    def get_origin(x, y)
-
-    end
-
-    def get_extent(width, height)
-
-    end
-
-    def is_empty
-
-    end
 
   end
 end
