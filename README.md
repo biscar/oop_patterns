@@ -13,4 +13,8 @@
 
 * _Singleton_
 
-http://practicingruby.com/articles/structural-design-patterns
+ **Structural:**
+ 
+ * _Adapter_
+ 
+ * _Bridge_
