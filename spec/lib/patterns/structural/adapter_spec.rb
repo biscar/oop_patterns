@@ -4,11 +4,18 @@ require './lib/patterns/structural/adapter/text_shape'
 
 describe 'Adapter' do
 
-  it 'TextShapeInterfaceAdapter' do
+  example 'Interface Adapter' do
     adapter = Patterns::Structural::Adapter::TextShapeInterfaceAdapter.new
 
     expect(adapter.bounding_box(1, 2)).to eq 5
     expect(adapter.is_empty).to be_falsey
-
   end
+
+  example 'Object Adapter' do
+    adapter = Patterns::Structural::Adapter::TextShapeObjectAdapter.new(DrawingEditor::TextView.new)
+
+    expect(adapter.bounding_box(1, 2)).to eq 5
+    expect(adapter.is_empty).to be_falsey
+  end
+
 end
