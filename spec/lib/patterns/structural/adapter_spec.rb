@@ -9,6 +9,7 @@ describe 'Adapter' do
 
     expect(adapter.bounding_box(1, 2)).to eq 5
     expect(adapter.is_empty).to be_falsey
+    expect(adapter.create_manipulator).to eq 'created'
   end
 
   example 'Object Adapter' do
@@ -16,6 +17,7 @@ describe 'Adapter' do
 
     expect(adapter.bounding_box(1, 2)).to eq 5
     expect(adapter.is_empty).to be_falsey
+    expect(adapter.create_manipulator).to eq 'created'
   end
 
 end

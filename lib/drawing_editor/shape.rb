@@ -5,6 +5,10 @@ module DrawingEditor
       bottom_left + top_right
     end
 
+    def create_manipulator
+      'created'
+    end
+
   end
 end
 
