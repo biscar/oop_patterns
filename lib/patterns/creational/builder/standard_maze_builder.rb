@@ -1,5 +1,5 @@
-require File.join(File.dirname(__FILE__), '../../../maze_loader.rb')
-require File.join(File.dirname(__FILE__), 'maze_builder.rb')
+require File.join(File.dirname(__FILE__), '../../../maze_loader')
+require File.join(File.dirname(__FILE__), 'maze_builder')
 
 module Patterns
   module Creational

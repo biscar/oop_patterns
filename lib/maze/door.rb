@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'map_site.rb')
+require File.join(File.dirname(__FILE__), 'map_site')
 
 module Maze
   class Door < Maze::MapSite

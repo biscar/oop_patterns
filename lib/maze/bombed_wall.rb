@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'wall.rb')
+require File.join(File.dirname(__FILE__), 'wall')
 
 module Maze
   class BombedWall < Maze::Wall

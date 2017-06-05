@@ -1,7 +1,7 @@
-require File.join(File.dirname(__FILE__), '../../../maze_loader.rb')
-require File.join(File.dirname(__FILE__), '../abstract_factory/maze_factory.rb')
-require File.join(File.dirname(__FILE__), '../abstract_factory/bombed_maze_factory.rb')
-require File.join(File.dirname(__FILE__), '../abstract_factory/enchanted_maze_factory.rb')
+require File.join(File.dirname(__FILE__), '../../../maze_loader')
+require File.join(File.dirname(__FILE__), '../abstract_factory/maze_factory')
+require File.join(File.dirname(__FILE__), '../abstract_factory/bombed_maze_factory')
+require File.join(File.dirname(__FILE__), '../abstract_factory/enchanted_maze_factory')
 
 require 'singleton'
 

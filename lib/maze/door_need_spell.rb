@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'door.rb')
+require File.join(File.dirname(__FILE__), 'door')
 
 module Maze
   class DoorNeedSpell < Maze::Door

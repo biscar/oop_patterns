@@ -1,0 +1,6 @@
+require File.join(File.dirname(__FILE__), 'equipments/bus')
+require File.join(File.dirname(__FILE__), 'equipments/cabinet')
+require File.join(File.dirname(__FILE__), 'equipments/chassis')
+require File.join(File.dirname(__FILE__), 'equipments/composite_equipment')
+require File.join(File.dirname(__FILE__), 'equipments/equipment')
+require File.join(File.dirname(__FILE__), 'equipments/floppy_disk')
