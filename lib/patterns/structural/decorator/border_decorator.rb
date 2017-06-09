@@ -6,13 +6,12 @@ module Patterns
 
       class BorderDecorator < Patterns::Structural::Decorator::Decorator
 
-        def post_initialize(params={})
+        def post_initialize(params = {})
           @width = params[:width]
         end
 
         def draw
           super
-
           draw_border
         end
 

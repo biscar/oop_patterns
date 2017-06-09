@@ -7,6 +7,8 @@ module Patterns
 
         def initialize(visual_component, params={})
           @component = visual_component
+
+          post_initialize(params)
         end
 
         def post_initialize(params={})

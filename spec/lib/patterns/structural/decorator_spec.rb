@@ -1,9 +1,18 @@
-require 'rspec'
+require 'spec_helper'
+
+require './lib/decorator_loader'
 
 describe 'Decorator' do
 
-  it 'should do something' do
+  example 'test case' do
+    window = Components::Window.new
+    text_view = Components::TextView.new
 
+    content = Patterns::Structural::Decorator::BorderDecorator.new(Patterns::Structural::Decorator::ScrollDecorator.new(text_view),
+                                                                   width: 1)
+    window.set_contents(content)
 
+    expect(content.draw).to eq 1
   end
+
 end
