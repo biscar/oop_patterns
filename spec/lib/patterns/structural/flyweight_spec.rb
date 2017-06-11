@@ -25,8 +25,6 @@ describe 'Flyweight' do
     expect(gc.get_font).to eq(times_italic12)
 
     (0..text.size-1).each do |index|
-      puts "Char #{index} #{text[index]}"
-
       gc.insert(index)
       if (7..15).include?(index)
         expect(gc.get_font).to eq(times_italic12)
