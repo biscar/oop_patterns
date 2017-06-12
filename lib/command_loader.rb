@@ -1,0 +1,7 @@
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/command')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/document')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/macro_command')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/my_class')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/open_command')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/paste_command')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/command/simple_command')
