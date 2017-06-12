@@ -1,0 +1,5 @@
+require File.join(File.dirname(__FILE__), 'help/application')
+require File.join(File.dirname(__FILE__), 'help/button')
+require File.join(File.dirname(__FILE__), 'help/dialog')
+require File.join(File.dirname(__FILE__), 'help/help_handler')
+require File.join(File.dirname(__FILE__), 'help/widget')
