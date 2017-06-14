@@ -1,0 +1,6 @@
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/widgets/button')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/widgets/entry_field')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/widgets/list_box')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/widgets/widget')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/dialog_director')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/mediator/font_dialog_director')
