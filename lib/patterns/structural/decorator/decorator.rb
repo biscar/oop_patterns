@@ -1,9 +1,9 @@
-require File.join(File.dirname(__FILE__), '../../../components/visual_component')
+require File.join(File.dirname(__FILE__), 'components/visual_component')
 
 module Patterns
   module Structural
     module Decorator
-      class Decorator < Components::VisualComponent
+      class Decorator < VisualComponent
 
         def initialize(visual_component, params={})
           @component = visual_component
@@ -22,7 +22,6 @@ module Patterns
         def resize
           component.resize
         end
-
 
         private
 

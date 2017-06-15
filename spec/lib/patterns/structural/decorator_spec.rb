@@ -5,8 +5,8 @@ require './lib/decorator_loader'
 describe 'Decorator' do
 
   example 'test case' do
-    window = Components::Window.new
-    text_view = Components::TextView.new
+    window = Window.new
+    text_view = TextView.new
 
     content = Patterns::Structural::Decorator::BorderDecorator.new(Patterns::Structural::Decorator::ScrollDecorator.new(text_view),
                                                                    width: 1)
