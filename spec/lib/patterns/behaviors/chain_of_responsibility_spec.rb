@@ -10,9 +10,9 @@ describe 'Chain of responsibility' do
     paper_operation_topic = 2
     application_topic = 3
 
-    application = Help::Application.new(topic: application_topic)
-    dialog = Help::Dialog.new(help_handler: application, topic: print_topic)
-    button = Help::Button.new(help_handler: dialog, topic: paper_operation_topic )
+    application = Application.new(topic: application_topic)
+    dialog = Dialog.new(help_handler: application, topic: print_topic)
+    button = Button.new(help_handler: dialog, topic: paper_operation_topic )
 
     expect(application.handle_help).to eq('показать список разделов справки')
     expect(dialog.handle_help).to eq('справка Dialog')
@@ -23,9 +23,9 @@ describe 'Chain of responsibility' do
     print_topic = 1
     application_topic = 3
 
-    application = Help::Application.new(topic: application_topic)
-    dialog = Help::Dialog.new(help_handler: application, topic: print_topic)
-    button = Help::Button.new(help_handler: dialog, )
+    application = Application.new(topic: application_topic)
+    dialog = Dialog.new(help_handler: application, topic: print_topic)
+    button = Button.new(help_handler: dialog, )
 
     expect(application.handle_help).to eq('показать список разделов справки')
     expect(dialog.handle_help).to eq('справка Dialog')
@@ -35,9 +35,9 @@ describe 'Chain of responsibility' do
   example '3' do
     application_topic = 3
 
-    application = Help::Application.new(topic: application_topic)
-    dialog = Help::Dialog.new(help_handler: application)
-    button = Help::Button.new(help_handler: dialog)
+    application = Application.new(topic: application_topic)
+    dialog = Dialog.new(help_handler: application)
+    button = Button.new(help_handler: dialog)
 
     expect(application.handle_help).to eq('показать список разделов справки')
     expect(dialog.handle_help).to eq('показать список разделов справки')
