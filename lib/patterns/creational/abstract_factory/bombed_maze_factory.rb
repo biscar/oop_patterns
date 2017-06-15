@@ -7,11 +7,11 @@ module Patterns
       class BombedMazeFactory < Patterns::Creational::AbstractFactory::MazeFactory
 
         def make_room(nomer)
-          Maze::RoomWithABomb.new(nomer: nomer)
+          RoomWithABomb.new(nomer: nomer)
         end
 
         def make_wal
-          Maze::BombedWall.new
+          BombedWall.new
         end
 
       end

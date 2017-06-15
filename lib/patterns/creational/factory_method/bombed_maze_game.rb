@@ -8,11 +8,11 @@ module Patterns
         class << self
 
           def make_wall
-            Maze::BombedWall.new
+            BombedWall.new
           end
 
           def make_room(nomer)
-            Maze::RoomWithABomb.new(nomer: nomer)
+            RoomWithABomb.new(nomer: nomer)
           end
 
         end

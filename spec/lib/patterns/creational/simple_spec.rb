@@ -1,5 +1,5 @@
 require 'spec_helper.rb'
-require './lib/maze_game.rb'
+require './lib/patterns/creational/maze/maze_game'
 
 describe 'Simple' do
   include_context 'helper'

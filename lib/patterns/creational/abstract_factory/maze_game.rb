@@ -15,15 +15,15 @@ module Patterns
             maze.add_room(r1)
             maze.add_room(r2)
 
-            r1.set_side(Maze::Direction.north, factory.make_wall)
-            r1.set_side(Maze::Direction.east, door)
-            r1.set_side(Maze::Direction.south, factory.make_wall)
-            r1.set_side(Maze::Direction.west, factory.make_wall)
+            r1.set_side(Direction.north, factory.make_wall)
+            r1.set_side(Direction.east, door)
+            r1.set_side(Direction.south, factory.make_wall)
+            r1.set_side(Direction.west, factory.make_wall)
 
-            r2.set_side(Maze::Direction.north, factory.make_wall)
-            r2.set_side(Maze::Direction.east,  factory.make_wall)
-            r2.set_side(Maze::Direction.south, factory.make_wall)
-            r2.set_side(Maze::Direction.west, door)
+            r2.set_side(Direction.north, factory.make_wall)
+            r2.set_side(Direction.east,  factory.make_wall)
+            r2.set_side(Direction.south, factory.make_wall)
+            r2.set_side(Direction.west, door)
 
             maze
           end
