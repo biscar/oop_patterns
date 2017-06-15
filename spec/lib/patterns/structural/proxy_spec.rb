@@ -8,7 +8,7 @@ describe 'Proxy' do
   example 'test' do
     path = File.join('images/proxy.png')
 
-    text = Documents::TextDocument.new
+    text = TextDocument.new
     image = Patterns::Structural::Proxy::ImageProxy.new(image_file: path)
 
     text.insert(image)

@@ -1,10 +1,10 @@
-require File.join(File.dirname(__FILE__), '../../../documents/graphic')
-require File.join(File.dirname(__FILE__), '../../../documents/image')
+require File.join(File.dirname(__FILE__), 'documents/graphic')
+require File.join(File.dirname(__FILE__), 'documents/image')
 
 module Patterns
   module Structural
     module Proxy
-      class ImageProxy < Documents::Graphic
+      class ImageProxy < Graphic
 
         def post_initialize(params = {})
           @file_name = params[:image_file]
@@ -12,7 +12,7 @@ module Patterns
 
         def get_image
            unless image
-             self.image = Documents::Image.new(file: file_name)
+             self.image = Image.new(file: file_name)
            end
 
            image
@@ -35,7 +35,7 @@ module Patterns
         end
 
         def load(from)
-          self.extent =  File.extname(from)
+          self.extent = File.extname(from)
         end
 
         def save(to)
