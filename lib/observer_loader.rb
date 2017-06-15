@@ -1,0 +1,8 @@
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/analog_clock')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/clock_timer')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/digital_clock')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/observer')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/subject')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/ruby/clock_timer')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/ruby/analog_clock')
+require File.join(File.dirname(__FILE__), 'patterns/behaviors/observer/ruby/digital_clock')
