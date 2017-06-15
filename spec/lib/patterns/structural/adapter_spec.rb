@@ -13,7 +13,7 @@ describe 'Adapter' do
   end
 
   example 'Object Adapter' do
-    adapter = Patterns::Structural::Adapter::TextShapeObjectAdapter.new(DrawingEditor::TextView.new)
+    adapter = Patterns::Structural::Adapter::TextShapeObjectAdapter.new(TextView.new)
 
     expect(adapter.bounding_box(1, 2)).to eq 5
     expect(adapter.is_empty).to be_falsey

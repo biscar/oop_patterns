@@ -3,9 +3,9 @@ require File.join(File.dirname(__FILE__), '../../../drawing_editor_loader.rb')
 module Patterns
   module Structural
     module Adapter
-      class TextShapeInterfaceAdapter < DrawingEditor::Shape
-        # mixin is alternative of < DrawingEditor::TextViewModule
-        include DrawingEditor::TextViewModule
+      class TextShapeInterfaceAdapter < Shape
+        # mixin is alternative of < TextViewModule
+        include TextViewModule
 
         def bounding_box(bottom_left, top_right)
           get_origin(bottom_left, top_right) + get_extent(bottom_left, top_right)
@@ -16,7 +16,7 @@ module Patterns
         end
       end
 
-      class TextShapeObjectAdapter < DrawingEditor::Shape
+      class TextShapeObjectAdapter < Shape
         def initialize(text_view)
           @text_view = text_view
         end
