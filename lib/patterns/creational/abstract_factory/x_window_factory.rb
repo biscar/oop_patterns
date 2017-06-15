@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__),  '../../../window/x_window_imp')
+require File.join(File.dirname(__FILE__),  '../../../window_loader')
 
 module Patterns
   module Creational
@@ -6,7 +6,7 @@ module Patterns
       class XWindowFactory
 
         def make_window_imp
-          Window::XWindowImp.new
+          XWindowImp.new
         end
 
       end

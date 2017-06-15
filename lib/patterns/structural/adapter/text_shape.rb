@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '../../../drawing_editor_loader.rb')
+require File.join(File.dirname(__FILE__), '../../../drawing_editor_loader')
 
 module Patterns
   module Structural

@@ -11,23 +11,23 @@ describe 'Bridge' do
   example 'PM Window' do
     ENV['WINDOWSTYLE'] = 'pm'
 
-    application_window = Window::ApplicationWindow.new
-    expect(application_window.draw_contents).to eq 'Window::ApplicationWindow'
+    application_window = ApplicationWindow.new
+    expect(application_window.draw_contents).to eq 'ApplicationWindow'
     expect(application_window.draw_rect(5, 5)).to eq 10
 
 
-    icon_window = Window::IconWindow.new
+    icon_window = IconWindow.new
     expect(icon_window.draw_contents).to eq 0
   end
 
   example 'X Window' do
     ENV['WINDOWSTYLE'] = 'x'
 
-    application_window = Window::ApplicationWindow.new
-    expect(application_window.draw_contents).to eq 'Window::ApplicationWindow'
+    application_window = ApplicationWindow.new
+    expect(application_window.draw_contents).to eq 'ApplicationWindow'
     expect(application_window.draw_rect(5, 5)).to eq 20
 
-    icon_window = Window::IconWindow.new
+    icon_window = IconWindow.new
     expect(icon_window.draw_contents).to eq 0
   end
 

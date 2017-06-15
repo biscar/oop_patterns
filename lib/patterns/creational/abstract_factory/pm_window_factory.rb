@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__),  '../../../window/pm_window_imp')
+require File.join(File.dirname(__FILE__),  '../../../window_loader')
 
 module Patterns
   module Creational
@@ -6,7 +6,7 @@ module Patterns
       class PMWindowFactory
 
         def make_window_imp
-          Window::PMWindowImp.new
+          PMWindowImp.new
         end
 
       end
