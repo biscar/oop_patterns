@@ -7,13 +7,13 @@ describe 'Flyweight' do
   example 'test' do
     text = 'Object-oriented program'
 
-    factory = Editor::GlyphFactory.new
+    factory = GlyphFactory.new
     text.each_char { |char| factory.create_character(char) }
 
-    gc = Editor::GlyphContext.new
+    gc = GlyphContext.new
 
-    times12 = Editor::Font.new('Times-Roman-12')
-    times_italic12 = Editor::Font.new('Times-Italic-12')
+    times12 = Font.new('Times-Roman-12')
+    times_italic12 = Font.new('Times-Italic-12')
 
     gc.set_font(times12, text.size)
 
