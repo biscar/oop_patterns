@@ -5,13 +5,13 @@ module Patterns
     module Facade
       class Compiler
         def compile(input, output)
-          scanner = Compilator::Scanner.new(input)
-          builder = Compilator::ProgramNodeBuilder.new(output)
-          parser = Compilator::Parser.new
+          scanner = Scanner.new(input)
+          builder = ProgramNodeBuilder.new(output)
+          parser = Parser.new
 
           parser.parse(scanner, builder)
 
-          generator = Compilator::Generators::RISCCodeGenerator.new(output)
+          generator = RISCCodeGenerator.new(output)
 
           parse_tree = builder.get_root_node
           parse_tree.traverse(generator)
