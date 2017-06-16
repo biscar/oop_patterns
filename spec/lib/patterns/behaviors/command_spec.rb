@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/command_loader'
 
 describe 'Command' do

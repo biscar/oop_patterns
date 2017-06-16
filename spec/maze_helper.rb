@@ -1,4 +1,4 @@
-shared_context 'helper' do
+shared_context 'maze_helper' do
 
   private
 

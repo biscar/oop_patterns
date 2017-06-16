@@ -1,4 +1,4 @@
-require './lib/patterns/behaviors/template_method/my_view.rb'
+require './lib/patterns/behaviors/template_method/my_view'
 
 describe 'Template Method' do
 

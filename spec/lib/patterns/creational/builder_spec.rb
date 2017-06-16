@@ -1,11 +1,11 @@
-require 'spec_helper.rb'
+require 'maze_helper'
 
-require './lib/patterns/creational/builder/maze_game.rb'
-require './lib/patterns/creational/builder/maze_builder.rb'
-require './lib/patterns/creational/builder/standard_maze_builder.rb'
+require './lib/patterns/creational/builder/maze_game'
+require './lib/patterns/creational/builder/maze_builder'
+require './lib/patterns/creational/builder/standard_maze_builder'
 
 describe 'Builder' do
-  include_context 'helper'
+  include_context 'maze_helper'
 
   let(:game) { Patterns::Creational::Builder::MazeGame }
 

@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/documents_loader'
 require './lib/patterns/structural/proxy/image_proxy'
 

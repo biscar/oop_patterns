@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/observer_loader'
 
 describe 'Observer' do

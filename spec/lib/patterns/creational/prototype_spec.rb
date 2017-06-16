@@ -1,9 +1,9 @@
-require 'spec_helper.rb'
+require 'maze_helper'
 
-require './lib/patterns/creational/prototype/maze_prototype_factory.rb'
+require './lib/patterns/creational/prototype/maze_prototype_factory'
 
 describe 'Prototype' do
-  include_context 'helper'
+  include_context 'maze_helper'
 
   let(:factory) {  Patterns::Creational::Prototype::MazePrototypeFactory }
 

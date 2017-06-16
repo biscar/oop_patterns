@@ -1,11 +1,11 @@
-require 'spec_helper.rb'
+require 'maze_helper'
 
-require './lib/patterns/creational/factory_method/bombed_maze_game.rb'
-require './lib/patterns/creational/factory_method/enchanted_maze_game.rb'
-require './lib/patterns/creational/factory_method/maze_game.rb'
+require './lib/patterns/creational/factory_method/bombed_maze_game'
+require './lib/patterns/creational/factory_method/enchanted_maze_game'
+require './lib/patterns/creational/factory_method/maze_game'
 
 describe 'FactoryMethod' do
-  include_context 'helper'
+  include_context 'maze_helper'
 
   let(:game) { Patterns::Creational::FactoryMethod::MazeGame }
 

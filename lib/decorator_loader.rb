@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'patterns/structural/decorator/components/text_view.rb')
+require File.join(File.dirname(__FILE__), 'patterns/structural/decorator/components/text_view')
 require File.join(File.dirname(__FILE__), 'patterns/structural/decorator/components/visual_component')
 require File.join(File.dirname(__FILE__), 'patterns/structural/decorator/components/window')
 require File.join(File.dirname(__FILE__), 'patterns/structural/decorator/border_decorator')

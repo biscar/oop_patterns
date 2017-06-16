@@ -1,10 +1,10 @@
-require 'spec_helper.rb'
+require 'maze_helper'
 
-require './lib/patterns/creational/abstract_factory/maze_game.rb'
-require './lib/patterns/creational/singleton/maze_factory.rb'
+require './lib/patterns/creational/abstract_factory/maze_game'
+require './lib/patterns/creational/singleton/maze_factory'
 
 describe 'Singleton' do
-  include_context 'helper'
+  include_context 'maze_helper'
 
   example 'Bombed' do
     ENV['MAZESTYLE'] = 'bombed'

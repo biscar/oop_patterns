@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/editor_loader'
 
 describe 'Flyweight' do

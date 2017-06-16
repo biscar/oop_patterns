@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/mediator_loader'
 
 describe 'Mediator' do

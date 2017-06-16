@@ -1,5 +1,3 @@
-require 'spec_helper.rb'
-
 require './lib/patterns/structural/adapter/text_shape'
 
 describe 'Adapter' do

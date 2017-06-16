@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/state_loader'
 
 describe 'State' do

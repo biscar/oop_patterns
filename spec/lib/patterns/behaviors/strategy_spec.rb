@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/strategy_loader'
 
 describe 'Strategy' do

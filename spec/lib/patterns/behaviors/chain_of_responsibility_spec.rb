@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/help_loader'
 
 describe 'Chain of responsibility' do

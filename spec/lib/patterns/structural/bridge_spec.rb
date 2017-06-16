@@ -1,5 +1,3 @@
-require 'spec_helper.rb'
-
 require './lib/window_loader'
 
 describe 'Bridge' do

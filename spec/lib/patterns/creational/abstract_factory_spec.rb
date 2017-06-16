@@ -1,12 +1,12 @@
-require 'spec_helper.rb'
+require 'maze_helper'
 
-require './lib/patterns/creational/abstract_factory/maze_game.rb'
-require './lib/patterns/creational/abstract_factory/maze_factory.rb'
-require './lib/patterns/creational/abstract_factory/bombed_maze_factory.rb'
-require './lib/patterns/creational/abstract_factory/enchanted_maze_factory.rb'
+require './lib/patterns/creational/abstract_factory/maze_game'
+require './lib/patterns/creational/abstract_factory/maze_factory'
+require './lib/patterns/creational/abstract_factory/bombed_maze_factory'
+require './lib/patterns/creational/abstract_factory/enchanted_maze_factory'
 
 describe 'AbstractFactory' do
-  include_context 'helper'
+  include_context 'maze_helper'
 
   let(:game) { Patterns::Creational::AbstractFactory::MazeGame }
 

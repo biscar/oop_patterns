@@ -1,5 +1,3 @@
-require 'spec_helper.rb'
-
 require './lib/equipments_loader'
 
 describe 'Composite' do

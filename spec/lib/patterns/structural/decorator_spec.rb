@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/decorator_loader'
 
 describe 'Decorator' do

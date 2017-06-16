@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 require './lib/memento_loader'
 
 describe 'Memento' do
